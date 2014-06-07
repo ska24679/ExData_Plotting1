@@ -16,7 +16,7 @@ with(household,plot(Time,Voltage,type="l",ylab="Voltage",xlab="datetime"))
 with(household,plot(Time,Sub_metering_1,type="l",ylab="Energy sub metering",xlab=""))
 with(household,lines(Time,Sub_metering_2,type="l",col="blue"))
 with(household,lines(Time,Sub_metering_3,type="l",col="red"))
-legend("topright",legend_labels,col=c("black","blue","red"),lty=1)
+legend("topright",legend_labels,col=c("black","blue","red"),lty=1,bty='n')
 
 with(household,plot(Time,Global_reactive_power,type="l",xlab="datetime"))
 dev.off()
